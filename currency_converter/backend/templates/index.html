@@ -1,0 +1,292 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ======== Favicon ======= -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- ======== Boxicons ======= -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ======== Slider Js ======= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"
+    />
+
+    <!--code for font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--code for font awesome cdn-->
+
+    <!--code for font awesome cdn-->
+    <link rel="stylesheet" type="text/css" href="/static/css/homePageStyles.css">
+
+
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+    <!-- ======== StyleSheet ======= -->
+    <link rel="stylesheet" href="/static/css/homePageStyles.css" />
+    <title>NovaVista</title>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="loader">
+      <img src="{% static 'images/preloader.gif' %}" alt="" />
+    </div>
+    <!-- header -->
+    <header class="header" id="header">
+      <!-- Navigation -->
+      <div class="navigation">
+        <nav class="nav d-flex">
+          <div class="logo">
+            <a href="/">
+              <img src="{% static 'images/logo.png' %}" />
+            </a>
+          </div>
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a href="#header" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#service" class="nav-link">Service</a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'sos' %}" class="nav-link">SOS</a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'convert_currency' %}" class="nav-link">CurrencyConverter</a>
+            </li>
+          </li>
+          </ul>
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-left"></i>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero -->
+      <div class="swiper-container slider-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="{% static 'images/pic-1.jpg' %}" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="{% static 'images/pic-5.jpg' %}" alt="hero image" />
+          </div>
+          <div class="swiper-slide">
+            <video muted loop autoplay>
+              <source src="{% static 'images/video-2.mp4' %}" type="video/mp4" />
+              <source src="{% static '/images/video-2.webm' %}" type="video/webm" />
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <img src="{% static 'images/pic-6.jpg' %}" alt="hero image" />
+          </div>
+
+          <div class="swiper-slide">
+            <video muted loop autoplay>
+              <source src="{% static 'images/video-3.mp4' %}" type="video/mp4" />
+              <source src="{% static '/images/video-3.webm' %}" type="video/webm" />
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <img src="{% static 'images/hero-3.jpg' %}" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <video muted loop autoplay>
+              <source src="{% static 'images/video-1.mp4' %}" type="video/mp4" />
+              <source src="{% static 'images/video-1.webm' %}" type="video/webm" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>
+          Get Ready for a <br />
+          Lifetime Experience
+        </h1>
+        <a href="#" class="btn">Get Started</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- About Section -->
+      <section class="section about" id="about">
+        <div class="row container">
+          <div class="col">
+            <div class="title">
+              <h1>About Us</h1>
+            </div>
+            <p>
+              Embark on a transformative journey with our revolutionary AI-Guided Cultural Companion, addressing a critical need in the booming tourism industry, particularly in India. The current landscape of travel apps lacks the sophistication needed to cater to the diverse linguistic and cultural needs of international tourists. Our app not only enhances Speech-to-Text and Real-Time Translation capabilities across major languages such as Spanish, French, German, and Chinese but also introduces the innovative GenAI feature, learning from user interactions to provide unparalleled personalized travel suggestions.
+            </p>
+          </div>
+          <div class="col">
+            <div class="swiper-container slider-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="{% static 'images/pic-5.jpg' %}" alt="hero image" />
+                </div>
+                <div class="swiper-slide">
+                  <video muted loop autoplay>
+                    <source src="{% static 'images/video-3.mp4' %}" type="video/mp4" />
+                    <source src="{% static 'images/video-3.webm' %}" type="video/webm" />
+                  </video>
+                </div>
+                <div class="swiper-slide">
+                  <img src="{% static 'images/hero-3.jpg' %}" alt="" />
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trip Section -->
+      <section class="section trip" id="trips">
+        <div class="title">
+          <h1>
+            What do <br />
+            We Offer
+          </h1>
+          <p>
+            Discover the epitome of travel excellence with What We Offer . Elevate your journeys with tailored recommendations, instant assistance, and cutting-edge insights, ensuring a travel experience like never before.
+          </p>
+        </div>
+
+        <div class="row container">
+          <div class="swiper-container slider-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="{% static 'images/vert-1.jpg' %}" alt="hero image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="{% static 'images/vert-2.jpg' %}" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="{% static 'images/vert-3.jpg' %}" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="{% static 'images/vert-4.jpg' %}" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="custom-next d-flex">
+            <i class="bx bx-chevron-right swiper-icon"></i>
+          </div>
+          <div class="custom-prev d-flex">
+            <i class="bx bx-chevron-left swiper-icon"></i>
+          </div>
+          <div class="custom-pagination d-flex"></div>
+        </div>
+        <div class="explore">
+          <a href="#" class="btn">Explore All</a>
+        </div>
+      </section>
+
+      
+      <!-- discount Section -->
+      <section class="section discount">
+        <div class="overlay">
+          <video class="video">
+            <source src="{% static 'images/hero-2.m4v' %}" type="video/mp4" />
+            <source src="{% static 'images/hero-2.webm' %}" type="video/webm" />
+          </video>
+        </div>
+        <div class="content">
+          <h1>
+            Know a place  <br />
+            We are unaware of ? 
+          </h1>
+          <a href="#" class="btn">Let Us Know</a>
+          <span class="video-control d-flex"><i class="bx bx-play"></i></span>
+        </div>
+      </section>
+
+      <!-- Feedback Section -->
+      <section class="section contact" id="contact">
+        <div class="title">
+          <h1>Let us know what you Think</h1>
+          <h2>Leave your Feedback</h2>
+          <p>
+            We value your experience! We would love to know your thoughts on NovaVista. Explore seamless AI-guided travel with us and share your feedback. Your insights help us enhance your journey.
+          </p>
+          <a href="#" class="btn">Feedback</a>
+        </div>
+      </section>
+    </main>
+
+    <!--footer section-->
+<section class="footer">
+	<div class="box-container">
+		<div class="box">
+			<h3> NovaVista </h3>
+			<p>Feel free to subscribe to the social media channels</p>
+
+			<div class="share">
+				<a href="https://www.facebook.com/profile.php?id=61554169256682" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/clay_crafts123" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/clay_craft123/" class="fa fa-instagram"></a>
+			</div> 
+		</div>
+
+
+		<div class="box">
+			<h3> Contact Info</h3>
+			<a href="#" class="links"><i class="fa fa-phone"></i>+914567891230</a>
+			<a href="#" class="links"><i class="fa fa-envelope"></i>XYZ.003@gmail.com</a>
+			<a href="#" class="links"><i class="fa fa-map-marker"></i>Bangalore,India</a>
+		</div>
+
+
+		<div class="box">
+			<h3> Quick Links</h3>
+			<a href="#" class="links"><i class="fa fa-arrow-right"></i>Home</a>
+			<a href="#" class="links"><i class="fa fa-arrow-right"></i>About</a>
+			<a href="#" class="links"><i class="fa fa-arrow-right"></i>Services</a>
+      <a href="#" class="links"><i class="fa fa-arrow-right"></i>SOS</a>
+			<a href="#" class="links"><i class="fa fa-arrow-right"></i>Feedback</a>
+		</div>
+
+		<div class="box">
+			<h3> Newsletter</h3>
+			<p>Subscribe for Latest Updates</p>
+			<input type="email" placeholder="Your Email" class="email">
+			<input type="submit" placeholder="Subscribe" class="btn">
+		</div>
+	</div>
+
+	<div class="credit">Created by <span>NovaVista</span> | All Rights Reserved</div>
+</section>
+
+
+
+    <!-- ======== SwiperJS ======= -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+    <!-- ======== LOCATION ======= -->   
+    <script src="{% static 'js/location.js' %}"></script>
+    <!-- ======== SCROLL REVEAL ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <!-- ======== SliderJS ======= -->
+    <script src="{% static 'js/slider.js' %}"></script>
+    <!-- ======== IndexJS ======= -->
+    <script src="{% static 'js/index.js' %}"></script>
+  </body>
+</html>
